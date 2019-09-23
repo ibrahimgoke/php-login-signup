@@ -1,4 +1,5 @@
 <?php
+session_start();
 include ("config/database.php");
 if(isset($_POST["submit"])) {
 
@@ -20,19 +21,18 @@ $count = mysqli_num_rows($result);
 // If result matched $myusername and $mypassword, table row must be 1 row
 
 if ($count == 1) {
+	$row = mysqli_fetch_row($result);
+	$_SESSION['username'] = $row[1];
+	// $_SESSION['username'] = $myusername;
 // Register $myusername, $mypassword and redirect to appropiate file
                     echo "<script type=\"text/javascript\">
 						alert(\"Login Successful\");
-						window.location = \"index.html\"
+						window.location = \"dashboard.php\"
 					</script>";
-    // $row = mysqli_fetch_row($result);
-
-    $_SESSION['username'] = $myusername;
-    // $_SESSION['ukulima_user_type'] = $row[3];
-}else{
+    }else{
     echo "<script type=\"text/javascript\">
 						alert(\"Wrong Username and Password\");
-						window.location = \"index.html\"
+						window.location = \"index.php\"
 					</script>";
 }
 }

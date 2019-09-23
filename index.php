@@ -1,3 +1,9 @@
+<?php
+session_start();
+if (isset($_SESSION['username'])) {
+        header("location: dashboard.php");
+}
+?>
 <!DOCTYPE html>
 <html lang="en" >
 <head>
@@ -36,6 +42,10 @@
         <div class="group">
           <label for="user" class="label">Username</label>
           <input id="username" required name="username" type="text" class="input">
+        </div>
+        <div class="group">
+          <label for="user" class="label">Email Address</label>
+          <input id="email" required name="email" type="email" class="input">
         </div>
         <div class="group">
           <label for="pass" class="label">Password</label>
