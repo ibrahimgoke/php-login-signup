@@ -15,7 +15,7 @@ body{
     max-width:525px;
     min-height:570px;
     position:relative;
-    background:url(http://codinginfinite.com/demo/images/bg.jpg) no-repeat center;
+    background:url(https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569_1280.jpg) no-repeat center;
     box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
   }
   .login-html{
