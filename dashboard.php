@@ -15,7 +15,7 @@ if (!isset($_SESSION['username'])) { // if session variable "username" does not 
 						window.location = \"index.php\"
                     </script>";
         // Use header location Alert to display the message
-    header("location: index.html?msg=Please login to access the dashboard"); // Re-direct to index page
+    // header("location: index.php?msg=Please login to access the dashboard"); // Re-direct to index page
 }
 ?>
 <!DOCTYPE html>
