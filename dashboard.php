@@ -1,6 +1,7 @@
 <?php
 session_start();
 ob_start();
+error_reporting(0);
 $username = $_SESSION['username'];
 
 // Check for more than one session
