@@ -1,3 +1,3 @@
 <?php
-define('EMAIL','example@gmail.com');
+define('EMAIL','email@gmail.com');
 define('PASS','password');

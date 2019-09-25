@@ -17,7 +17,7 @@ include ("config/database.php");
 // If user already exist
 if($count>=1) {
 					echo "<script type=\"text/javascript\">
-						alert(\"User already exist .\");
+						alert(\"User already exist.\");
 						window.location = \"index.php\"
 					</script>";
 }else{
